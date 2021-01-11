@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
 <!-- Copyright 2019                                                        -->
 <!-- Matthew Boelkins                                                      -->
@@ -19,11 +19,11 @@
 	
 
     <book>
-		<title>Álgebra (Matemáticas CC.SS. II)</title>
+		<title>Números Complejos</title>
 		
         <chapter>
-            <title>Matrices</title>
-            Aqui un poco de texto
+            <title>Números Complejos</title>
+            Los números complejos nacen de la necesidad de dar sentido y validez a las expresiones del tipo <m>\sqrt{-1}</m>.
         </chapter>
         
 
