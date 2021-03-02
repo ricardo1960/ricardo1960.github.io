@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-03-02T13:44:52+01:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PTXSC Experimentos aleatorios</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evalua (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="pretext-SC" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Salta al contenido principal</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\order}[1]{\left\lvert#1\right\rvert}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ived.eus" target="_blank"><img src="images/logo.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="probabilidad.html"><span class="title">Probabilidad</span></a></h1>
+<p class="byline">Ricardo Mateos<br xmlns:svg="http://www.w3.org/2000/svg"> Cristina Gual<br xmlns:svg="http://www.w3.org/2000/svg"> Josu Beobide</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "classic",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="frontmatter.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="probabilidad.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_combinatoria.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="frontmatter.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="probabilidad.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="sec_combinatoria.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a></li>
+<li class="link active">
+<a href="experimentos-aleatorios.html" data-scroll="experimentos-aleatorios"><span class="codenumber">1</span> <span class="title">Experimentos aleatorios</span></a><ul>
+<li><a href="experimentos-aleatorios.html#experimentos-aleatorios-espacio-muestral" data-scroll="experimentos-aleatorios-espacio-muestral">Experimentos aleatorios. Espacio muestral</a></li>
+<li><a href="experimentos-aleatorios.html#operaciones-con-sucesos" data-scroll="operaciones-con-sucesos">Operaciones con sucesos</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_combinatoria.html" data-scroll="sec_combinatoria"><span class="codenumber">2</span> <span class="title">Combinatoria</span></a><ul>
+<li><a href="sec_combinatoria.html#variaciones-ordinarias" data-scroll="variaciones-ordinarias">Variaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#variaciones-con-repeticion" data-scroll="variaciones-con-repeticion"></a></li>
+<li><a href="sec_combinatoria.html#permutaciones-ordinarias" data-scroll="permutaciones-ordinarias">Permutaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#permutaciones-con-repeticion" data-scroll="permutaciones-con-repeticion">Permutaciones con repetición</a></li>
+<li><a href="sec_combinatoria.html#combinaciones-ordinarias" data-scroll="combinaciones-ordinarias">Combinaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#combinaciones-con-repeticion" data-scroll="combinaciones-con-repeticion">Combinaciones con repetición</a></li>
+</ul>
+</li>
+<li class="link"><a href="sec_probabilidad.html" data-scroll="sec_probabilidad"><span class="codenumber">3</span> <span class="title">Probabilidad</span></a></li>
+<li class="link"><a href="sec_calculo-de-probabilidades.html" data-scroll="sec_calculo-de-probabilidades"><span class="codenumber">4</span> <span class="title">Calculo de probabilidades</span></a></li>
+<li class="link"><a href="tablas-de-contingencia.html" data-scroll="tablas-de-contingencia"><span class="codenumber">5</span> <span class="title">Tablas de contingencia</span></a></li>
+<li class="link">
+<a href="sec_experimentos_compuestos.html" data-scroll="sec_experimentos_compuestos"><span class="codenumber">6</span> <span class="title">Experimentos compuestos</span></a><ul>
+<li><a href="sec_experimentos_compuestos.html#experimentos_independientes" data-scroll="experimentos_independientes">Experimentos independientes</a></li>
+<li><a href="sec_experimentos_compuestos.html#experimentos_dependientes" data-scroll="experimentos_dependientes">Experimentos dependientes</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Apéndices</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="experimentos-aleatorios"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">1</span> <span class="title">Experimentos aleatorios</span>
+</h2>
+<section class="subsection" id="experimentos-aleatorios-espacio-muestral"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">1.1</span> <span class="title">Experimentos aleatorios. Espacio muestral</span>
+</h3>
+<p id="p-2">Un <dfn class="terminology">experimento</dfn> se llama <dfn class="terminology">determinista</dfn> si se conoce su resultado de antemano y se llama <dfn class="terminology">aleatorio</dfn> si no se conoce el resultado antes de realizarlo aunque se realice en las mismas condiciones.</p>
+<article class="assemblage assemblage-like" id="assemblage-1"><h6 class="heading"><span class="title">Espacio muestral de un experimento aleatorio.</span></h6>
+<p id="p-3">Se llama <dfn class="terminology">espacio muestral</dfn> al conjunto de todos los resultados posibles que se pueden dar en un experimento aleatorio. Se suele designar con la letra \(E\text{.}\)</p></article><article class="example example-like" id="espacio_muestral"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">1.1</span><span class="period">.</span>
+</h6>
+<p id="p-4">Di cuál es el espacio muestral correspondiente a los siguientes experimentos aleatorios:</p>
+<ol id="p-5" class="lower-alpha">
+<li id="li-1"><p id="p-6">Lanzar una moneda y ver el resultado.</p></li>
+<li id="li-2"><p id="p-7">Extraer una carta de una baraja española y anotar el palo.</p></li>
+<li id="li-3"><p id="p-8">Lanzar un dado y ver el resultado.</p></li>
+<li id="li-4"><p id="p-9">Lanzar seis monedas y anotar el número de caras.</p></li>
+<li id="li-5"><p id="p-10">Lanzar dos monedas y ver el resultado.</p></li>
+<li id="li-6"><p id="p-11">Tirar dos dados y sumar los puntos</p></li>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><ol id="p-12" class="lower-alpha">
+<li id="li-7"><p id="p-13">\(\displaystyle E=\{C,X\}\)</p></li>
+<li id="li-8"><p id="p-14">\(\displaystyle E=\{O,C,E,B\}\)</p></li>
+<li id="li-9"><p id="p-15">\(\displaystyle E=\{1,2,3,4,5,6\}\)</p></li>
+<li id="li-10"><p id="p-16">\(\displaystyle E=\{0,1,2,3,4,5,6\}\)</p></li>
+<li id="li-11"><p id="p-17">\(\displaystyle E=\{CC,CX,XC,XX\}\)</p></li>
+<li id="li-12"><p id="p-18">\(\displaystyle E=\{2,3,4,5,6,7,8,9,10,11,12\}\)</p></li>
+</ol></div></div></article><p id="p-19">Se llama suceso aleatorio a cualquier subconjunto del espacio muestral.</p>
+<p id="p-20">Si el espacio muestral tiene un número finito \(n\) de elementos, entonces el número de sucesos de \(E\) es \(2^n\)</p>
+<p id="p-21">Dentro de los sucesos podemos distinguir:</p>
+<p id="p-22"><dfn class="terminology">Suceso elemental:</dfn> Es el suceso formado por un único resultado.</p>
+<p id="p-23"><dfn class="terminology">Suceso compuesto:</dfn> Es el suceso formado por dos o más sucesos elementales.</p>
+<p id="p-24"><dfn class="terminology">Suceso seguro:</dfn> Es el que siempre ocurre. Coincide con el espacio muestral.</p>
+<p id="p-25"><dfn class="terminology">Suceso imposible:</dfn> Es el que no ocurre nunca. Se designa por el símbolo de conjunto vacío:\(\emptyset\)</p></section><section class="subsection" id="operaciones-con-sucesos"><h3 class="heading hide-type">
+<span class="type">Subsección</span> <span class="codenumber">1.2</span> <span class="title">Operaciones con sucesos</span>
+</h3>
+<p id="p-26">Dados dos sucesos \(A\) y \(B\text{,}\) llamamos:</p>
+<p id="p-27"><dfn class="terminology">Unión</dfn> de \(A\) y \(B\) al suceso \(A \cup B\) formado por todos los elementos de \(A\) o de \(B\text{.}\)</p>
+<p id="p-28"><dfn class="terminology">Intersección</dfn> de \(A\) y \(B\) al suceso \(A \cap B\) formado por todos los elementos comunes de \(A\) y de \(B\text{.}\)</p>
+<p id="p-29"><dfn class="terminology">Diferencia</dfn> de \(A\) menos \(B\) al suceso \(A - B\) formado por todos los elementos de \(A\) que no están en \(B\text{.}\)</p>
+<p id="p-30"><dfn class="terminology">Complementario</dfn> de \(A\) al suceso \(\overline{A}\) formado por todos los elementos del espacio muestral que no pertenecen a \(A\text{.}\)</p>
+<p id="p-31">Es evidente que: \(A \cup \overline{A}=E\) y \(A \cap \overline{A}= \emptyset\)</p>
+<p id="p-32">Dos sucesos son <dfn class="terminology">incompatibles</dfn> cuando no pueden ocurrir a la vez, es decir, cuando \(A \cap B=\emptyset\text{.}\) En caso contrario son <dfn class="terminology">compatibles</dfn>.Leyes de Morgan: \(\overline{A} \cap \overline{B}= \overline{A \cup B}\) y \(\overline{A} \cup \overline{B}= \overline{A \cap B}\)</p>
+<pre class="code-display tex2jax_ignore">
+\centering
+</pre>
+<p id="p-33"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="images/grafica_prob_1.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="images/grafica_prob_2.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+</div></div></p>
+<p id="p-34"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="images/grafica_prob_3.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-start;"><img src="images/grafica_prob_4.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+</div></div></p>
+<article class="example example-like" id="operaciones_sucesos1"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Operaciones con sucesos.</span>
+</h6>
+<p id="p-35">Se lanza un dado y se observa la puntuación de la cara superior. Se consideran los sucesos: \(A=\) {salir un número par} y \(B=\) {salir un múltiplo de 3}.</p>
+<p id="p-36">Calcula los sucesos:</p>
+<ol id="p-37" class="decimal">
+<li id="li-13"><p id="p-38">\(\displaystyle \overline{A}\)</p></li>
+<li id="li-14"><p id="p-39">\(\displaystyle A \cup B\)</p></li>
+<li id="li-15"><p id="p-40">\(\displaystyle A \cap B\)</p></li>
+<li id="li-16"><p id="p-41">\(\displaystyle A -B\)</p></li>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-42">El espacio muestral es \(E=\{1,2,3,4,5,6\}\text{,}\) el suceso \(A=\{2,4,6\}\) y el suceso \(B=\{3,6\}\text{.}\)</p>
+<ol id="p-43" class="decimal">
+<li id="li-17"><p id="p-44">\(\displaystyle \overline{A}=\{1,3,5\}\)</p></li>
+<li id="li-18"><p id="p-45">\(\displaystyle A \cup B= \{ 2,3,4,6\}\)</p></li>
+<li id="li-19"><p id="p-46">\(\displaystyle A \cap B=\{6\}\)</p></li>
+<li id="li-20"><p id="p-47">\(\displaystyle A -B= \{2,4\}\)</p></li>
+</ol>
+</div></div></article></section></section></div></main>
+</div>
+</body>
+</html>
