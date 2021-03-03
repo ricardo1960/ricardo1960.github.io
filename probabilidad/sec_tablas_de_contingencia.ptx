@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="tablas-de-contingencia">
+		<title>Tablas de contingencia</title>
+
+		<p>
+			Algunos problemas se pueden resolver utilizando tablas de contingencia, en las cuales ponemos las cantidades de cada suceso en una tabla y con estos datos calculamos las probabilidades.
+		</p>
+        <example xml:id="tab_cont1">
+		<p>
+			En una editorial hay dos máquinas <m>A</m> y <m>B</m> que encuadernan 100 y 900 libros al día, respectivamente. Además, se sabe que la probabilidad de que un libro encuadernado por <m>A</m> tenga algún fallo es del 2%, y del 10% si ha sido encuadernado por la máquina <m>B</m>. Se elige, al azar, un libro encuadernado por esa editorial.
+		</p>
+
+		<p><ol>
+			<li>
+					<p>
+			Calcular la probabilidad de que no sea defectuoso.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			Calcular la probabilidad de que sea defectuoso y fabricado por la máquina <m>A</m>.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			Calcular la probabilidad de que esté fabricado por la máquina <m>A</m> si el libro no es defectuoso.
+		</p>
+			</li>
+
+		</ol></p>
+
+        <solution>
+		Hacemos una tabla de contingencia con los datos del problema y a partir de ella calculamos lo que nos piden.
+			<tabular left="minor" right="minor" bottom="minor" top="minor">
+			<row class="even">
+				<cell halign="center">•</cell>
+				<cell halign="center"><em>Defectuoso</em></cell>
+				<cell halign="center"><em>No Defectuoso</em></cell>
+				<cell halign="center"><em>Total</em></cell>
+			</row>
+			<row class="odd">
+				<cell halign="center"><em>A</em></cell>
+				<cell halign="center">2</cell>
+				<cell halign="center">98</cell>
+				<cell halign="center">100</cell>
+			</row>
+			<row class="even">
+				<cell halign="center"><em>B</em></cell>
+				<cell halign="center">90</cell>
+				<cell halign="center">810</cell>
+				<cell halign="center">900</cell>
+			</row>
+			<row class="odd">
+				<cell halign="center"><em>Total</em></cell>
+				<cell halign="center">92</cell>
+				<cell halign="center">908</cell>
+				<cell halign="center">1000</cell>
+			</row>
+			</tabular>
+		
+
+		<p><ol>
+			<li>
+					<p>
+			<m>P( \text{no defectuoso})=\dfrac{908}{1000}=0.908</m>.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<m>P(D \cap A)=\dfrac{2}{1000}=0.002</m>
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<m>P(A / \overline{D})=\dfrac{98}{908}=0.1079</m>
+		</p>
+			</li>
+
+		</ol></p>
+        </solution>
+        </example>
+        <exercise xml:id="ex_tab_cont1">
+        <statement>
+		<p>
+			En un aula hay 40 sillas, 30 con respaldo y 10 sin él. Entre las sillas con respaldo hay 7 nuevas y entre las sillas sin respaldo 3 nuevas.
+		</p>
+
+		<p><ol>
+			<li>
+					<p>
+			Tomada una silla al azar, ¿cuál es la probabilidad de que sea nueva?.
+		</p>
+			</li>
+
+			<li>
+					<p>
+			Si se coge una silla que no es nueva, ¿cuál es la probabilidad de que no tenga respaldo?.
+		</p>
+			</li>
+
+		</ol></p>
+        </statement>
+        <answer>
+		<p><ol>
+		
+		
+			<li>
+					<p>
+			<m>P(N)=\dfrac{10}{40}=0.25</m>
+		</p>
+			</li>
+
+			<li>
+					<p>
+			<m>P(\overline{R}/\overline{N})=\dfrac{3}{30}=0.1</m>
+		</p>
+			</li>
+
+		</ol></p>
+		</answer>
+		</exercise>
+
+	</section>

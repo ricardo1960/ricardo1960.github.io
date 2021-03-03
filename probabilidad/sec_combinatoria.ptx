@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_combinatoria">
+		<title>Combinatoria</title>
+
+
+		<subsection xml:id="variaciones-ordinarias">
+			<title>Variaciones ordinarias</title>
+        <assemblage><title>Variaciones ordinarias</title>
+			<p>
+				Las variaciones sin repetición de m elementos tomados de n en n donde <m>m &gt;n</m> son los distintos grupos de n elementos cada uno que se pueden formar con los m elementos de modo que:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				<term>Importa el orden de colocación de los elementos.</term>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<term>No aparezcan elementos repetidos en cada grupo.</term>
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				El número de formas posibles es: <m>V_m^n = \dfrac{m!}{(m-n)!}</m>
+			</p>
+			</assemblage>
+    <example xml:id="var_ord1">
+			<p>
+				En una carrera de motos participan 25 pilotos. ¿De cuántas maneras puede componerse el podio?.
+			</p>
+
+<solution>
+
+			<p>
+				El total de pilotos es 25, es decir tenemos 25 elementos posibles para colocar <m>m=25</m>
+			</p>
+
+			<p>
+				En el podio habrá 3 elementos: Primero, segundo y tercero, luego haremos grupos con 3 elementos en cada grupo <m>n=3</m>.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				Importa el orden de colocación ya que no es lo mismo ser primero, que segundo o tercero.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				No puede haber elementos repetidos ya que le que es primero no puede estar en otra posición.
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				Por lo tanto las formas de componer el podio son:
+			</p>
+
+			<p>
+				<me>V_{25}^3 =\dfrac{25!}{(25-3)!}=\dfrac{25!}{22!}= \dfrac{25\cdot 24 \cdot 23 \cdot 22!}{22!} = 13800</me>
+			</p>
+
+			<p>
+				Hay 13800 formas de componer el podio.
+			</p>
+			</solution>
+</example>
+        <xi:include href="exercises/exercises_variaciones_ordinarias.ptx" />
+		</subsection>
+
+        <subsection xml:id="variaciones-con-repeticion">
+			
+            <assemblage><title>Variaciones con repetición</title>
+			<p>
+				Las variaciones con repetición de m elementos tomados de n en n son los distintos grupos de n elementos cada uno que se pueden formar con los m elementos de modo que:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				<term>Importa el orden de colocación de los elementos.</term>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<term>Pueden aparecer elementos repetidos en cada grupo.</term>
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				En este caso m puede ser más pequeño que n.
+			</p>
+
+			<p>
+				El número de formas posibles es: <m>VR_m^n = m^n</m>
+			</p>
+            </assemblage>
+            <example xml:id="var_repe1">
+			<p>
+				¿Cuántos números de cuatro cifras podemos formar con las cifras 1, 2, 3, 4, 5 y 6?
+			</p>
+
+            <solution>
+			<p>
+				En este caso <m>m=6</m> y <m>n=4</m> y:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				Importa el orden de colocación de los elementos.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Se pueden repetir los elementos.
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				Por lo tanto, tenemos que utilizar variaciones con repetición.
+			</p>
+
+			<p>
+				Cantidad de números = <m>VR_6^4 = 1296</m>
+			</p>
+            </solution>
+            </example>
+            
+            <example xml:id="var_repe2">
+			<p>
+				¿Cuántos números de cinco cifras podemos escribir en sistema binario? (el sistema binario solo utiliza las cifras <m>0</m> y <m>1</m>)
+			</p>
+            
+            <solution>
+			<p>
+				En este caso <m>m=2</m> y <m>n=5</m> y además:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				Importa el orden de colocación de los elementos.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Se pueden repetir los elementos.
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				<m>VR_2^5 = 32</m> números de cinco cifras se pueden escribir en sistema binario.
+			</p>
+            </solution>
+            </example>
+            
+			<xi:include href="exercises/exercises_variaciones_repeticion.ptx" />
+
+		</subsection>
+    
+        <subsection xml:id="permutaciones-ordinarias">
+			<title>Permutaciones ordinarias</title>
+            <assemblage><title>Permutaciones ordinarias</title>
+			<p>
+				Son las distintas ordenaciones de los <m>n</m> elementos de un conjunto. Las permutaciones ordinarias son las variaciones ordinarias donde <m>m=n</m>.
+			</p>
+
+			<p>
+				<m>P_n=n!</m>
+			</p>
+            </assemblage>
+            <example xml:id="per_ord1">
+			<p>
+				¿De cuántas maneras se pueden alinear seis personas mientras esperan en la fila para comprar entradas?
+			</p>
+            <solution>
+			<p>
+				<m>P_6=6!=720</m>
+			</p>
+            </solution>
+            </example>
+            <example xml:id="per_ord2">
+			<p>
+				¿De cuántas maneras se pueden organizar las letras en la palabra "camión"?
+			</p>
+            <solution>
+			<p>
+				<m>P_6=720</m>
+			</p>
+            </solution>
+            </example>
+		</subsection>
+
+		<subsection xml:id="permutaciones-con-repeticion">
+			<title>Permutaciones con repetición</title>
+        <assemblage><title>Permutaciones con repetición</title>
+			<p>
+				Las permutaciones con repetición son las distintas ordenaciones de los <m>n</m> elementos de un conjunto cuando dentro de este conjunto hay elementos repetidos.
+			</p>
+
+			<p>
+				<m>PR_n^{a,b,c..}=\dfrac{n!}{a!\cdot b! \cdot c! \cdots}</m>
+			</p>
+        </assemblage>
+
+        <example xml:id="per_repe1">
+			<p>
+				¿De cuántas maneras se pueden organizar las letras en la palabra "matemáticas"?
+			</p>
+        <solution>
+			<p>
+				<m>PR_{11}^{2,2,3}= 1663200</m>
+			</p>
+        </solution>
+        </example>
+		</subsection>
+
+		<subsection xml:id="combinaciones-ordinarias">
+			<title>Combinaciones ordinarias</title>
+            <assemblage><title>Combinaciones ordinarias</title>
+			<p>
+				Las combinaciones sin repetición de m elementos tomados de n en n donde <m>m &gt;n</m> son los distintos grupos de n elementos cada uno que se pueden formar con los m elementos de modo que:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				<term>No importa el orden de colocación de los elementos.</term>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<term>No aparezcan elementos repetidos en cada grupo.</term>
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				El número de formas posibles es: <m>C_m^n = \dfrac{m!}{n!\cdot (m-n)!}</m>
+			</p>
+            </assemblage>
+            
+            <example xml:id="com_ord1">
+			<p>
+				Una tienda de helados tiene quince sabores diferentes de helados, ¿cuántos cuencos de tres cucharadas diferentes se pueden hacer.?
+			</p>
+
+            <solution>
+			<p>
+				En este caso :
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				No importa el orden.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				No se pueden repetir elementos
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				Por lo tanto son combinaciones de 15 elementos tomados de 3 en 3.
+			</p>
+
+			<p>
+				<m>C_{15}^3= \dfrac{15!}{3!12!}=455</m> cuencos.
+			</p>
+            </solution>
+            </example>
+		</subsection>
+
+		<subsection xml:id="combinaciones-con-repeticion">
+			<title>Combinaciones con repetición</title>
+            <assemblage><title>Combinaciones con repetición</title>
+			<p>
+				Las combinaciones con repetición de m elementos tomados de n en n son los distintos grupos de n elementos cada uno que se pueden formar con los m elementos de modo que:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+				<term>No importa el orden de colocación de los elementos.</term>
+			</p>
+				</li>
+
+				<li>
+							<p>
+				<term>Pueden aparecer elementos repetidos en cada grupo.</term>
+			</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				El número de formas posibles es: <m>CR_m^n = C_{m+n-1}^n</m>
+			</p>
+            </assemblage>
+		</subsection>
+        
+        
+</section>

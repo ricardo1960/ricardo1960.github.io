@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_experimentos_compuestos">
+		<title>Experimentos compuestos</title>
+
+
+<assemblage><title>Experimentos compuestos</title>
+<p>
+Un experimento compuesto es aquel formado por varios experimentos simples, ya se realicen estos de forma simultanea o sucesivamente. 
+</p>
+<p>
+Si el resultado de un experimento simple no influye en los otros se dice que son independientes. En caso contrario son dependientes.
+</p>
+</assemblage>
+
+<subsection xml:id="experimentos_independientes">
+			<title>Experimentos independientes</title>
+
+
+<example xml:id="exp_ind1">
+<p>
+Lanzamos una moneda y un dado. Calcular la probabilidad de sacar cara y número par.
+</p>
+<solution>
+Los sucesos son independientes ya que el resultado de uno no influye en el otro.
+
+Por lo tanto <m>P(C\cap P)= P(C)\cdot P(P)= \dfrac{1}{2}\cdot \dfrac{3}{6}=\dfrac{1}{4}</m>
+</solution>
+</example>
+</subsection>
+<subsection xml:id="experimentos_dependientes">
+<title>Experimentos dependientes</title>
+
+<example id="exp_dep1">
+<p>
+Tenemos dos urnas: 
+</p>
+<sidebyside width="50%">
+<image>
+<latex-image>
+\begin{tikzpicture}
+	\node[rectangle, shade, ball color=white, text width=5cm, align= center] at (3,2) {\Large Urna 1};
+  	\node[circle, shade, ball color=blue] at (1,0){\color{white}\Large \phantom{1}};;
+  	\node[circle, shade, ball color=blue] at (2,0){\color{white}\Large \phantom{1}};;
+  	\node[circle, shade, ball color=blue] at (3,0){\color{white}\Large \phantom{1}};;
+  	\node[circle, shade, ball color=green] at (4,0) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=green] at (5,0) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (1,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (2,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (3,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (4,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=blue] at (5,1) {\color{white}\Large \phantom{1}};
+  	\draw (0.5,1.5) -- (0.5,-0.5) -- (5.5,-0.5) -- (5.5,1.5) ;
+  	\node[rectangle,ball color=white, text width=5cm, align=center] at (9,2) {\Large Urna 2};
+  	\node[circle, shade, ball color=blue] at (7,0){\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=blue] at (8,0){\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=blue] at (9,0){\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=blue] at (10,0) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=blue] at (11,0) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (7,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=red] at (8,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=green] at (9,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=green] at (10,1) {\color{white}\Large \phantom{1}};
+  	\node[circle, shade, ball color=green] at (11,1) {\color{white}\Large \phantom{1}};
+  	\draw (6.5,1.5) -- (6.5,-0.5) -- (11.5,-0.5) -- (11.5,1.5) ;
+  \end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>
+<p>
+Lanzamos la moneda y si sale cara, extraemos una bola de la primera urna y si sale cruz extraemos una bola de la segunda urna.
+</p>
+<p>
+<ol>
+<li> Hallar la probabilidad de que la bola sea azul si ha salido cara.</li>
+<li> Hallar la probabilidad de que halla salido cara y la bola sea azul.</li>
+</ol>
+</p>
+<solution>
+<p>Son experimentos dependientes ya que lo que suceda en el primer experimento influye en el segundo.</p>
+
+<p>Para resolverlo hacemos un diagrama en árbol. Hay que tener en cuenta que la probabilidad de una rama es el producto de las probabilidades de esa rama.</p>
+<sidebyside width="50%">
+
+<image>
+<latex-image>
+
+\begin{tikzpicture}[grow=right, sloped,scale=0.6]
+		\tikzstyle{level 1}=[level distance=5cm, sibling distance=10cm]
+		\tikzstyle{level 2}=[level distance=5cm, sibling distance=3cm]
+		\tikzstyle{bag} = [text width=4em, text centered,fill=blue!30]
+		\tikzstyle{end} = [circle, text width=1cm, inner sep=0pt, fill=green, text centered]
+		\node[bag] {Moneda}
+		child {
+			node[bag] {Urna 2}        
+				child {
+					node[end, right] {R }
+					edge from parent 
+					node[below]  {2/10}
+				}
+				child {
+					node[end, right] {V }
+					edge from parent
+					node[below]  {3/10}
+				}
+				child {
+					node[end, right] {A }
+					edge from parent
+					node[below]  {5/10}
+				}
+				edge from parent
+					node[above] {+}
+					node[below]  {1/2}
+			   }
+		child {
+			node[bag] {Urna 1}        
+				child {
+					node[end, right] {R}
+					edge from parent
+					node[below]  {4/10}
+				}
+				child {
+					node[end, right] {V }
+					edge from parent
+					node[below]  {2/10}
+				}
+				child {
+					node[end, right] {A }
+					edge from parent
+					node[below]  {4/10}
+				}
+				edge from parent
+					node[above] {C}
+					node[below]  {1/2}
+			   };
+\end{tikzpicture}
+</latex-image>
+</image>
+</sidebyside>   
+<p>
+<ol>
+<li> <m>P(V \cap C)=\dfrac{2}{10}</m></li>
+<li> <m>P(C \cap V)= \dfrac{1}{2} \cdot \dfrac{2}{10}= \dfrac{1}{10}</m></li>
+</ol>
+</p>
+</solution>
+</example>
+</subsection>
+</section>
+	

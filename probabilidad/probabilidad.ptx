@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file is part of the PreTeXt Showcase article. -->
+<!--                                                    -->
+<!-- Copyright (©) 2019 The PreTeXt Organization.       -->
+<!-- See the README file for contributing guidelines.   -->
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="es-ES" >
+
+  <docinfo>
+    <brandlogo url="https://ived.eus" source="images/logo.jpg" />
+
+    <macros>
+      \newcommand{\order}[1]{\left\lvert#1\right\rvert}
+    </macros>
+
+    <latex-image-preamble>
+      \usepackage{tikz}
+      \usepackage{pgfplots}
+      \usepackage{pstricks}
+      \usepackage{phaistos}
+      \usepackage{xcolor}
+    </latex-image-preamble>
+
+    <initialism>PTXSC</initialism>
+
+    <document-id>pretext-SC</document-id>
+
+    <html>
+      <favicon/>
+      <baseurl href="https://pretextbook.org/examples/pretext-showcase/html" />
+    </html>
+
+    <rename element="fact" xml:lang="en-US">Self Evident Fact</rename>
+
+  </docinfo>
+
+  <article xml:id="probabilidad">
+    <title>Probabilidad</title>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>
+              <line>Ricardo Mateos</line>
+              <line>Cristina Gual</line>
+              <line>Josu Beobide</line>
+          </personname>
+          <department>Departamento de Matemáticas</department>
+          <institution>
+            <line>Urrutiko Hezkuntzarako Euskal Institutua</line>
+            <line>Instituto Vasco de Eduación a Distancia</line>
+          </institution>
+          <email>
+             matematika.bizkaia@uhei.eus
+          </email>
+        </author>
+
+        <date>Curso 2020-2021</date>
+      </titlepage>
+
+      <abstract>
+        <p>
+          This is a showcase of <pretext/> features.
+          It is meant to be viewed in multiple output forms (HTML, PDF)
+          to demonstrate what is possible from <pretext/> source.
+        </p>
+      </abstract>
+    </frontmatter>
+
+    <xi:include href="sec_experimentos_aleatorios.ptx" />
+    <xi:include href="sec_combinatoria.ptx" />
+    <xi:include href="sec_probabilidad.ptx" />
+    <xi:include href="sec_calculo_probabilidades.ptx" />
+    <xi:include href="sec_tablas_de_contingencia.ptx" />
+    <xi:include href="sec_experimentos_compuestos.ptx" />
+    <xi:include href="sec_probabilidad_total.ptx" />
+
+    <backmatter><title>Apéndices</title>
+      <index>
+        <title>Index</title>
+
+        <introduction>
+          <p>
+            Entries are alphabetized word-by-word, not letter-by-letter.
+            Topics indexed are <pretext/> features, not any actual content.
+          </p>
+        </introduction>
+
+        <index-list />
+      </index>
+
+    </backmatter>
+
+  </article>
+
+</pretext>

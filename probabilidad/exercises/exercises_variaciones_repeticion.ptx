@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2018 Joel Feldman, Andrew Rechnitzer and Elyse Yeager -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises_variaciones_repeticion" permid="iOL">
+
+<exercise xml:id="ex_var-repe1">
+<statement>
+<p>
+				Con las cifras impares escribimos números de tres cifras:
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+				Sin repetición.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Con repetición.
+			</p>
+				</li>
+
+			</ol></p>
+
+			<p>
+				En ambas situaciones ¿cuántos son mayores de 150?. ¿Cuántos son menores de 529?.
+			</p>
+</statement>
+<answer>
+			<p><ol>
+				<li>
+							<p>
+				Mayores de 150: <m>57</m>. Menores de 529: <m>27</m>.
+			</p>
+				</li>
+
+				<li>
+							<p>
+				Mayores de 150: <m>110</m>. Menores de 529: <m>55</m>.
+			</p>
+				</li>
+
+			</ol></p>
+</answer>
+</exercise>
+
+<exercise xml:id="ex_var_repe2">
+<statement>
+			<p>
+				En código Morse se escribe cada letra del alfabeto mediante series de puntos y rayas. ¿Cuántas letras diferentes se pueden escribir si utilizamos como máximo 4 simbolos?.
+                </p>
+</statement>
+<answer>
+			<p>
+				30
+			</p>
+</answer>
+<hint>
+    Hay que tener en cuenta que las letras pueden tener 1, 2, 3 o 4 simbolos. Por lo tanto, hay que calcular cuántas letras se pueden hacen con 1, 2, 3 o 4 simbolos y luego sumar todas.
+</hint>
+</exercise>
+</exercises>

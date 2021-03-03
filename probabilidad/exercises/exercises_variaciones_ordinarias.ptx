@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2018 Joel Feldman, Andrew Rechnitzer and Elyse Yeager -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="exercises_variaciones_ordinarias" permid="iOL">
+<exercise permid="aaa">
+<statement>
+
+			<p>
+				Calcula cuántos números de tres cifras diferentes pueden formarse usando sólo los dígitos 2, 3, 4, 6, 7 y 8.
+			</p>
+</statement>
+
+<answer>
+			<p>
+				<m>V_6^3= 120</m>
+			</p>
+</answer>
+</exercise>
+
+<exercise>
+<statement>
+			<p>
+				¿Cuántas palabras de siete letras diferentes (con sentido o no) pueden formarse con las letras A, B, C, D, E, F, G, H e I?. ¿Cuántas acaban en D?. ¿Y en DA?.
+			</p>
+</statement>
+
+<answer>
+			<p>
+				<m>V_9^7 = 181440</m>.
+			</p>
+
+			<p>
+				Acabadas en D: <m>V_8^6 = 20160</m>
+			</p>
+
+			<p>
+				Acabadas en DA: <m>V_7^5= 2520</m>
+			</p>
+</answer>
+</exercise>
+
+
+<exercise>
+<statement>
+			<p>
+				Si el salto de altura olímpico tiene 24 finalistas, ¿de cuántas maneras se pueden organizar los competidores en ganadores de oro, plata y bronce?
+			</p>
+</statement>
+<answer>
+			<p>
+				<m>V_{24}^{3}= 12144</m>
+			</p>
+
+
+</answer>
+<solution>
+    <p>
+        En este caso importa el orden ya que no es lo mismo ganar el oro, la plata o el bronce y no se pueden repetir los elementos ya que un saltador no puede ganar dos medallas. El número de elementos es 24 y haremos grupos de 3 en 3.</p>
+    <p>    <m>V_{24}^{3}= 12144</m></p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+			<p>
+				¿Cuántos modelos de billetes de tren deben imprimirse para cubrir un trayecto de ocho estaciones, si en cada billete debe figurar la estación de salida y la de llegada?
+			</p>
+</statement>
+<answer>
+			<p>
+				<m>V_8^2 = 56</m>
+			</p>
+</answer>
+</exercise>
+</exercises>

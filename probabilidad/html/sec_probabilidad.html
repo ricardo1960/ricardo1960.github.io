@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-03-03T16:04:23+01:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PTXSC Probabilidad</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evalua (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="pretext-SC" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Salta al contenido principal</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\order}[1]{\left\lvert#1\right\rvert}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ived.eus" target="_blank"><img src="images/logo.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="probabilidad.html"><span class="title">Probabilidad</span></a></h1>
+<p class="byline">Ricardo Mateos<br xmlns:svg="http://www.w3.org/2000/svg"> Cristina Gual<br xmlns:svg="http://www.w3.org/2000/svg"> Josu Beobide</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "classic",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_combinatoria.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="probabilidad.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_calculo-de-probabilidades.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="sec_combinatoria.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="probabilidad.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="sec_calculo-de-probabilidades.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a></li>
+<li class="link">
+<a href="experimentos-aleatorios.html" data-scroll="experimentos-aleatorios"><span class="codenumber">1</span> <span class="title">Experimentos aleatorios</span></a><ul>
+<li><a href="experimentos-aleatorios.html#experimentos-aleatorios-espacio-muestral" data-scroll="experimentos-aleatorios-espacio-muestral">Experimentos aleatorios. Espacio muestral</a></li>
+<li><a href="experimentos-aleatorios.html#operaciones-con-sucesos" data-scroll="operaciones-con-sucesos">Operaciones con sucesos</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_combinatoria.html" data-scroll="sec_combinatoria"><span class="codenumber">2</span> <span class="title">Combinatoria</span></a><ul>
+<li><a href="sec_combinatoria.html#variaciones-ordinarias" data-scroll="variaciones-ordinarias">Variaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#variaciones-con-repeticion" data-scroll="variaciones-con-repeticion"></a></li>
+<li><a href="sec_combinatoria.html#permutaciones-ordinarias" data-scroll="permutaciones-ordinarias">Permutaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#permutaciones-con-repeticion" data-scroll="permutaciones-con-repeticion">Permutaciones con repetición</a></li>
+<li><a href="sec_combinatoria.html#combinaciones-ordinarias" data-scroll="combinaciones-ordinarias">Combinaciones ordinarias</a></li>
+<li><a href="sec_combinatoria.html#combinaciones-con-repeticion" data-scroll="combinaciones-con-repeticion">Combinaciones con repetición</a></li>
+</ul>
+</li>
+<li class="link active"><a href="sec_probabilidad.html" data-scroll="sec_probabilidad"><span class="codenumber">3</span> <span class="title">Probabilidad</span></a></li>
+<li class="link"><a href="sec_calculo-de-probabilidades.html" data-scroll="sec_calculo-de-probabilidades"><span class="codenumber">4</span> <span class="title">Calculo de probabilidades</span></a></li>
+<li class="link"><a href="tablas-de-contingencia.html" data-scroll="tablas-de-contingencia"><span class="codenumber">5</span> <span class="title">Tablas de contingencia</span></a></li>
+<li class="link">
+<a href="sec_experimentos_compuestos.html" data-scroll="sec_experimentos_compuestos"><span class="codenumber">6</span> <span class="title">Experimentos compuestos</span></a><ul>
+<li><a href="sec_experimentos_compuestos.html#experimentos_independientes" data-scroll="experimentos_independientes">Experimentos independientes</a></li>
+<li><a href="sec_experimentos_compuestos.html#experimentos_dependientes" data-scroll="experimentos_dependientes">Experimentos dependientes</a></li>
+</ul>
+</li>
+<li class="link"><a href="probabilidad-total.html" data-scroll="probabilidad-total"><span class="codenumber">7</span> <span class="title">Probabilidad total</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Apéndices</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_probabilidad"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">3</span> <span class="title">Probabilidad</span>
+</h2>
+<article class="assemblage assemblage-like" id="assemblage-8"><h6 class="heading"><span class="title">Definición axiomática de probabilidad.</span></h6>
+<p id="p-130">Para que una función \(P\) sea una probabilidad, tiene que cumplir los siguientes tres axiomas:</p>
+<ol id="p-131" class="decimal">
+<li id="li-41"><p id="p-132">\(\displaystyle P(S)\geq 0\)</p></li>
+<li id="li-42"><p id="p-133">\(\displaystyle P(E)= 1\)</p></li>
+<li id="li-43"><p id="p-134">Si \(A\) y \(B\) son incompatibles (\(A \cap B = \emptyset\)) \(\Rightarrow P(A \cup B)=P(A)+P(B)\)</p></li>
+</ol></article><p id="p-135">De los tres axiomas anteriores se sacan las siguientes consecuencias:</p>
+<ol id="p-136" class="decimal">
+<li id="li-44"><p id="p-137">\(\displaystyle P(\emptyset)=0\)</p></li>
+<li id="li-45"><p id="p-138">\(\displaystyle P(\overline{A})=1-P(A)\)</p></li>
+<li id="li-46"><p id="p-139">Si \(A\) y \(B\) con compatibles (\(A \cap B \neq \emptyset\)) \(\Rightarrow P(A \cup B)=P(A)+P(B)-P(A \cap B)\)</p></li>
+</ol>
+<article class="example example-like" id="prob1"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.1</span><span class="period">.</span>
+</h6>
+<p id="p-140">Sean \(A\) y \(B\) dos sucesos tales que \(P(A)=0.3\text{,}\) \(P(B)=0.7\) y \(P(A\cap B)=0.15\text{.}\) Calcular las siguientes probabilidades:</p>
+<ol id="p-141" class="decimal">
+<li id="li-47"><p id="p-142">\(\displaystyle P(\overline{A})\)</p></li>
+<li id="li-48"><p id="p-143">\(\displaystyle P(\overline{A} \cap \overline{B})\)</p></li>
+<li id="li-49"><p id="p-144">\(\displaystyle P(\overline{A} \cup \overline{B})\)</p></li>
+<li id="li-50"><p id="p-145">\(\displaystyle P(A \cap \overline{B})\)</p></li>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like"><ol id="p-146" class="decimal">
+<li id="li-51"><p id="p-147">\(\displaystyle P(\overline{A})= 1-P(A)=1-0.3=0.7\)</p></li>
+<li id="li-52">
+<p id="p-148">Aplicando las leyes de Morgan: \(P(\overline{A} \cap \overline{B})= P(\overline{A \cup B}) = 1 -P(A \cup B)\)</p>
+<p id="p-149">Calculamos \(P(A \cup B)=P(A)+P(B)-P(A\cap B)=0.3+0.7-0.15=0.85\)</p>
+<p id="p-150">\(P(\overline{A} \cap \overline{B})=1-0.85=0.15\)</p>
+</li>
+<li id="li-53">
+<p id="p-151">Aplicando las leyes de Morgan:</p>
+<p id="p-152">\(P(\overline{A} \cup \overline{B})=P(\overline{A \cap B})=1-P(A \cap B)=1-0.15=0.85\)</p>
+</li>
+<li id="li-54"><p id="p-153">\(\displaystyle P(A \cap \overline{B})=P(A)-P(A \cap B)=0.3-0.15=0.15\)</p></li>
+</ol></div></div></article><article class="example example-like" id="prob2"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.2</span><span class="period">.</span>
+</h6>
+<p id="p-154">El 78% de los universitarios estudia inglés, el 23% estudia alemán y el 15% estudia ambos idiomas. Calcula la probabilidad de encontrar un universitario que no estudie ninguno de los dos idiomas.</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like">
+<p id="p-155">Sea \(I\) = Estudiar inglés y \(A\) = Estudiar alemán</p>
+<div class="displaymath" id="p-156">
+\begin{equation*}
+P(I)=0.78, P(A)=0.23 \text{y} P(I\cap A)=0.15
+\end{equation*}
+</div>
+<div class="displaymath" id="p-157">
+\begin{equation*}
+P(I \cup A)=P(I)+P(A)-P(I \cap A)=0.78+0.23-0.15=0.86
+\end{equation*}
+</div>
+<div class="displaymath" id="p-158">
+\begin{equation*}
+P(\overline{I} \cap \overline{A})=P( \overline{ I \cup A})=1-P(I \cup A)=1-0.86=0.14
+\end{equation*}
+</div>
+</div></div></article><article class="assemblage assemblage-like" id="assemblage-9"><h6 class="heading"><span class="title">Probabilidad condicionada. Sucesos dependientes e independientes.</span></h6>
+<p id="p-159">Se llama probabilidad condicional de un suceso \(A\) respecto de otro \(B\) a la probabilidad de \(A\) cuando sabemos que ha ocurrido \(B\text{.}\) Viene dada por</p>
+<div class="displaymath">
+\begin{equation*}
+p(A/B)=\dfrac{p(A \cap B)}{p(B)}
+\end{equation*}
+</div>
+<p class="continuation">Si \(p(A/B)=p(A)\) se dice que los sucesos son independientes( el que ocurra \(B\) no influye en lo que pase con \(A\))</p></article><article class="example example-like" id="prob_cond1"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.3</span><span class="period">.</span>
+</h6>
+<p id="p-160">En una bolsa tenemos las siguientes bolas:</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/image-5.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-161">Calcular la probabilidad:</p>
+<ol id="p-162" class="decimal">
+<li id="li-55"><p id="p-163">Sacar número par si la bola extraida es roja.</p></li>
+<li id="li-56"><p id="p-164">Sacar número par si la bola extraida es azul.</p></li>
+<li id="li-57"><p id="p-165">Sacar número par si la bola extraida es verde.</p></li>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><ol id="p-166" class="decimal">
+<li id="li-58"><p id="p-167">\(\displaystyle P(Par/Roja)=\dfrac{P(Par \cap Roja)}{P(Roja)}=\dfrac{2}{4}= \dfrac{1}{2}\)</p></li>
+<li id="li-59"><p id="p-168">\(\displaystyle P(Par/Azul)=\dfrac{P(Par \cap Azul)}{P(Azul)}=\dfrac{1}{3}\)</p></li>
+<li id="li-60"><p id="p-169">\(\displaystyle P(Par/Verde)=\dfrac{P(Par \cap Verde)}{P(Verde)}=\dfrac{1}{1}= 1\)</p></li>
+</ol></div></div></article><article class="example example-like" id="pro_cond2"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.4</span><span class="period">.</span>
+</h6>
+<p id="p-170">Un turista que realiza un crucero tiene un 50% de probabilidad de visitar Cádiz, un 40% de visitar Sevilla y un 30% de visitar ambas ciudades. Calcule la probabilidad de que:</p>
+<ol id="p-171" class="decimal">
+<li id="li-61"><p id="p-172">Visite al menos una de las dos ciudades.</p></li>
+<li id="li-62"><p id="p-173">Visite únicamente una de las dos ciudades.</p></li>
+<li id="li-63"><p id="p-174">Visite Cádiz pero no visite Sevilla.</p></li>
+<li id="li-64"><p id="p-175">Visite Sevilla, sabiendo que ha visitado Cádiz.</p></li>
+</ol>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like">
+<p id="p-176">Llamemos \(S\) al suceso visitar Sevilla y \(C\) al suceso visitar Cádiz.</p>
+<p id="p-177">Sabemos que \(P(C)=0.5\text{,}\) \(P(S)=0.4\) y \(P(S \cap C)=0.3\)</p>
+<ol id="p-178" class="decimal">
+<li id="li-65">
+<p id="p-179">La probabilidad de visitar al menos una de las dos ciudades es: \(P(C \cup S)\)</p>
+<div class="displaymath" id="p-180">
+\begin{equation*}
+P(C \cup S) = P(C)+P(S)-P(C \cap S)= 0.5+0.4-0.3= 0.6
+\end{equation*}
+</div>
+</li>
+<li id="li-66">
+<p id="p-181">La probabilidad de visitar solo una de las ciudades es la probabilidad de visitar alguna de ellas menos la probabilidad de visitar las dos.</p>
+<div class="displaymath" id="p-182">
+\begin{equation*}
+P(\text{Solo una ciudad})= P(C \cup S)-P(C \cap S)=0.6-0.3=0.3
+\end{equation*}
+</div>
+</li>
+<li id="li-67">
+<p id="p-183">La probabilidad de que visite Cadíz pero no Sevilla es la probabilidad de visitar Cadíz menos la probabilidad de visitar las dos ciudades.</p>
+<div class="displaymath" id="p-184">
+\begin{equation*}
+P(C \cap \overline{S})=P(C )-P(C \cap S)=0.5-0.3=0.2
+\end{equation*}
+</div>
+</li>
+<li id="li-68">
+<p id="p-185">La probabilidad de visitar Sevilla, sabiendo que se ha visitado Cadíz, es la probabilidad de visitar las dos ciudades entre la probabilidad de visitar Cadíz.</p>
+<div class="displaymath" id="p-186">
+\begin{equation*}
+P(S/C)=\dfrac{P(C \cap S)}{P(C)}=\dfrac{0.3}{0.5}=0.6
+\end{equation*}
+</div>
+</li>
+</ol>
+</div></div></article></section></div></main>
+</div>
+</body>
+</html>
