@@ -75,6 +75,8 @@
     <xi:include href="sec_tablas_de_contingencia.ptx" />
     <xi:include href="sec_experimentos_compuestos.ptx" />
     <xi:include href="sec_probabilidad_total.ptx" />
+    <xi:include href="sec_teorema_de_bayes.ptx" />
+    <xi:include href="sec_problemas.ptx" />
 
     <backmatter><title>Apéndices</title>
       <index>

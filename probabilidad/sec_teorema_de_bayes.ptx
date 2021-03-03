@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<section xml:id="sec_teorema_de_bayes"><title>Teorema de Bayes</title>
+
+<theorem xml:id="teorema_de_bayes"><title>Teorema de Bayes</title>
+<p>	 
+Si conocemos la probabilidad de los distintos sucesos de un espacio completo de sucesos y la probabilidad condicionada de que ocurra el suceso <m> B</m> si ha ocurrido cada uno de los sucesos <m>A_i</m>, entonces la probabilidad de que ocurra el suceso <m>A_i</m> si ha ocurrido el suceso <m>B</m> es:
+</p>
+<p>    
+	\[ P(A_i/B)=\dfrac{P(A_i)\cdot P(B/A_i)}{P(B)}=\dfrac{P(A_i)\cdot P(B/A_i)}{\sum_{i=1}^n P(A_i)\cdot P(B/A_i)} \]
+</p>
+</theorem> 
+ 
+
+    
+<example xml:id="teo_bayes1">
+<statement>
+<p>
+Un joyero compra los relojes a dos casas comerciales (A y B). La casa A le proporciona el 40% de los relojes, resultando defectuosos un 3% de ellos. La casa B le suministra el resto de los relojes, resultando defectuosos un 1% de ellos. Cierto día, al vender un reloj el joyero observa que está defectuoso. Determinar la probabilidad de que dicho reloj proceda de la casa comercial B.
+</p>
+</statement>
+<solution>
+<p>
+Hay que calcular una probabilidad a posteriori y por eso utilizamos el teorema de Bayes.
+</p>
+<p>
+	\[	P(B/D)=\dfrac{P(B)P(D/B)}{P(D)}\]
+</p>
+<p>
+Calculamos primero la probabilidad total de que el reloj sea defectuoso mediante el teorema de la probabilidad total:
+</p>
+<p>
+\[ 	P(D)=P(A)P(D/A)+P(B)P(D/B) = 0.4 \cdot 0.03+0.6\cdot 0.01=0.018 \]
+</p>    
+<p>
+Luego la probabilidad de que sea de la casa B sabiendo que es defectuoso es:
+</p>    
+<p>
+		 \[ P(B/D)=\dfrac{0.6\cdot 0.01}{0.018}= 0.33  \]
+</p>
+</solution>
+</example> 
+
+</section>
