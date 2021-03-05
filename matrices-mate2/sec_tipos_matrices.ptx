@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<section xml:id="sec_tipos_matrices" >
+
+  <title>Tipos de matrices.</title>
+  <p>
+    <ol label="a">
+	  <li>
+        <p>  
+          <term> Matriz fila</term>: es la matriz que solo tiene una fila <m>A_{1n}</m>.
+        </p>
+        <p>
+          <me>A= \begin{pmatrix}  -1 \amp 1  \amp 2  \\ \end{pmatrix}</me>
+        </p>
+      </li>
+      <li>
+        <p> 
+          <term> Matriz columna</term>: es la matriz que solo tiene una fila <m>A_{m1}</m>
+        </p>
+        <p>
+          <me>A= \begin{pmatrix}  -1 \\  1  \\  2  \\  -3   \\\end{pmatrix}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Matriz nula</term>: es la matriz en la que todos sus elementos son nulos.
+        </p>
+        <p>
+          <me>A= \begin{pmatrix}  0 \amp 0  \\  0  \amp 0 \\   0 \amp 0 \\\end{pmatrix}</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Matriz rectangular</term>: es la matriz que tiene distinto número de filas que de columnas.
+        </p>
+        <p>
+          <me>A= \begin{pmatrix}  -1 \amp 1  \amp 2  \\  -3  \amp 3 \amp -5 \\\end{pmatrix}</me>
+        </p>
+      </li>
+      <li>
+        <p> 
+          <term>Matriz cuadrada</term>: es la matriz que tiene igual número de filas que de columnas (m=n). En este caso podemos decir que la matriz es de orden n. 
+        </p>
+        <p>
+          <me>B= \begin{pmatrix}  -1 \amp 1  \amp 2  \\  -3  \amp 3 \amp -5 \\  2  \amp 1 \amp 6 \\\end{pmatrix}</me>
+        </p>
+        <p>
+          En una matriz cuadrada definimos:
+        </p>
+        <p>
+          <ol label="(i)">
+            <li>
+              <p> 
+                <term>Diagonal principal</term>: Son los elementos cuyo número de fila coincide con el de columna: <m>a_{ii}</m>
+              </p>
+              <p>
+                <me> 
+                  \begin{pmatrix} 
+                  \color{red} 1 \amp -1 \amp 3   \\
+                  0 \amp \color{red}3 \amp 2  \\
+                  3 \amp -2  \amp \color{red}2  \\ 
+                  \end{pmatrix} 
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Diagonal secundaria</term>: Son todos los elementos tales que <m>i+j=n+1</m>.
+              </p>
+              <p>
+                <me> 
+                  \begin{pmatrix} 
+                  1 \amp -1 \amp \color{red} 3   \\
+                  -2 \amp \color{red}{-2} \amp 1   \\
+                  \color{red} 1 \amp -3  \amp -4  \\ 
+                  \end{pmatrix} 
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    Dentro de las matrices cuadradas podemos distinguir las siguientes:
+  </p>
+  <p>
+    <term>Matrices triangular superior:</term> Son las que todos sus elementos por debajo de la diagonal principal son cero.
+  </p>
+  <p>
+    <me> 
+      \begin{pmatrix} 
+      1 \amp -1 \amp 3 \amp 0  \\
+      \color{red}0 \amp 3  \amp 1 \amp -1  \\
+      \color{red}0 \amp \color{red}0 \amp 2 \amp 1 \\
+      \color{red}0 \amp \color{red}0  \amp \color{red}0 \amp -4  \\ 
+      \end{pmatrix} 
+    </me>
+  </p>
+  <p>
+    <term>Matrices triangular inferior:</term> Son las que todos sus elementos por encima de la diagonal principal son cero.
+  </p>
+  <p>
+    <me>
+      \begin{pmatrix}1 \amp \color{red}0 \amp \color{red}0 \amp \color{red}0  \\
+      -1 \amp 3  \amp \color{red}0 \amp \color{red}0  \\
+      1 \amp 2 \amp -2 \amp \color{red}0 \\
+      4 \amp 0  \amp 6 \amp -2  \\ 
+      \end{pmatrix} 
+    </me>
+  </p>
+  <p>
+    <term>Matrices diagonal:</term> Son las que todos sus elementos fuera de la diagonal principal son cero.
+  </p>
+  <p>
+    <me>
+      \begin{pmatrix} 1 \amp \color{red}0 \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp 3  \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp \color{red}0 \amp -2 \amp \color{red}0 \\
+      \color{red}0 \amp \color{red}0  \amp \color{red}0 \amp -2  \\ 
+      \end{pmatrix}
+    </me>
+  </p>
+  <p>
+    <term>Matrices escalar:</term> Son las que todos sus elementos  de la diagonal principal son iguales y el resto cero.
+  </p>
+  <p>
+    <me>
+      \begin{pmatrix} -2 \amp \color{red}0 \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp -2  \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp \color{red}0 \amp -2 \amp \color{red}0 \\
+      \color{red}0 \amp \color{red}0  \amp \color{red}0 \amp -2  \\ 
+      \end{pmatrix}
+    </me> 
+  </p>
+  <p>
+    <term>Matrices identidad:</term> Son las que todos sus elementos  de la diagonal principal son 1 y el resto cero.
+  </p>
+  <p>
+    <me>
+      \begin{pmatrix} 1 \amp \color{red}0 \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp 1  \amp \color{red}0 \amp \color{red}0  \\
+      \color{red}0 \amp \color{red}0 \amp 1 \amp \color{red}0 \\
+      \color{red}0 \amp \color{red}0  \amp \color{red}0 \amp 1  \\ 
+      \end{pmatrix}
+    </me>
+  </p>
+  <p>
+    La matriz identidad se llama <m>I_n</m>, siendo <m>n</m> el orden de la matriz.
+  </p>
+
+</section>

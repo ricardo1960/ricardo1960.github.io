@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<section xml:id="sec_operaciones_matrices"><title>Operaciones con matrices</title>
+
+
+  <definition><title>Suma</title>
+
+    <p>
+      Dadas dos matrices de la misma dimensión <m>A=(a_{ij})</m> y <m>B=(b_{ij})</m> llamamos suma a otra matriz <m>C=(c_{ij})</m> definida por 
+    </p>
+    <p>
+      <me>(c_{ij})=(a_{ij})+(b_{ij})=(a_{ij}+b_{ij})</me>
+    </p>
+    <p>
+      Y cumple las siguientes propiedades
+    </p>
+    <p>
+      <ol>
+		<li>
+          <p> <m>A+B=B+A</m>
+          </p>
+        </li>
+		<li>
+          <p>
+            <m>A+(B+C)=(A+B)+C</m>
+          </p>
+        </li>
+		<li>
+          <p>
+            <m>A+0=A</m>
+          </p>
+        </li>
+		<li>
+          <p>
+            <m>A-A=0</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </definition>
+
+  <example xml:id="exa_oper1">
+    <statement>
+      <p>
+        Sumar 
+        <m>
+          \begin{pmatrix}
+            2 \amp 1 \\
+            1 \amp 1 \\
+            3 \amp 2
+          \end{pmatrix} 
+        +
+          \begin{pmatrix}
+            1 \amp 0 \\
+            -1 \amp -2 \\
+            2 \amp 3
+          \end{pmatrix}    
+        </m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \begin{pmatrix}
+            2 \amp 1 \\
+            1 \amp 1 \\
+            3 \amp 2
+          \end{pmatrix} 
+            +
+          \begin{pmatrix}
+            1 \amp 0 \\
+            -1 \amp -2 \\
+            2 \amp 3
+          \end{pmatrix}    = 
+          \begin{pmatrix}
+            3 \amp 1 \\
+            0 \amp-1 \\
+            5 \amp 5
+          \end{pmatrix}    
+        </me>
+      </p>
+    </solution>
+  </example>
+
+
+  <assemblage>
+    <title>Producto por un número real</title>
+    <p>
+      Dados un número real <m>k\in \mathbb{R}</m> y una matriz <m>A=(a_{ij})</m> se define el producto de <m>k\cdot A</m> de la siguiente manera:
+    </p>
+    <p>
+      <me>
+        k\cdot A=k\cdot (a_{ij})= (k\cdot a_{ij})
+      </me>
+    </p> 
+  </assemblage>
+      
+  <example  xml:id="exa_oper2">
+    <statement>
+      <p>
+        Realizar la siguiente operación:
+      </p>
+      <p>
+        <me>
+          5\cdot\begin{pmatrix}
+                  2 \amp 1 \\
+                  1 \amp 1 \\
+                  3 \amp 2
+                \end{pmatrix}
+        </me>
+      </p>   
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \begin{pmatrix}
+            10 \amp 5 \\
+            5 \amp 5 \\
+            15 \amp 10
+          \end{pmatrix}  
+        </me>
+      </p>
+    </solution>
+  </example>
+
+
+  <assemblage>
+    <title>Producto de matrices</title>
+    <p>
+      Dos matrices <m>A</m> y <m>B</m> se pueden multiplicar si el número de columnas de <m>A</m> es igual al número de filas de <m>B</m>, en tal caso, se define la multiplicación de la siguiente manera
+    </p>
+    <p>
+      <me>
+        \underbrace{A}_{m \ast n} \cdot \underbrace{B}_{n\ast p}=\underbrace{C}_{m\ast p}
+      </me>
+    </p>
+    <p>
+      Para calcular el elemento <m>c_{ij}</m> hay que utilizar la fila <m>i</m> de <m>A</m> y la columna <m>j</m> de B.
+    </p>
+    <p>
+      <me>
+        \begin{pmatrix}
+          a_{i1} \amp a_{i2}\amp a_{i3}\amp \cdots \amp a_{in} \\
+        \end{pmatrix}
+        \cdot
+        \begin{pmatrix}
+          a_{j1} \\ a_{j2}\\a_{j3}\\ \cdots \\a_{jn} \\
+        \end{pmatrix}=a_{i1}\cdot a_{j1}+ a_{i2} \cdot a_{2j} + \cdots +a_{in}\cdot a_{nj}
+      </me>
+    </p>
+    <p>
+      <em>
+        El producto de matrices no es conmutativo <m>A \cdot B \neq B\cdot A</m>
+      </em>
+    </p>
+  </assemblage>
+  
+  <example xml:id="exa_oper3">
+    <statement>
+      <p>Realizar el siguiente producto  
+        <m>
+          \begin{pmatrix}
+            2 \amp 1 \\
+            1 \amp 1 \\
+            3 \amp 2
+          \end{pmatrix}
+          \cdot 
+          \begin{pmatrix}
+            10 \amp 5 \amp5\\
+            5 \amp 5 \amp-2
+          \end{pmatrix}
+        </m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <m>
+          \begin{pmatrix}
+            2 \amp 1 \\
+            1 \amp 1 \\
+            3 \amp 2
+          \end{pmatrix}
+          \cdot 
+          \begin{pmatrix}
+            10 \amp 5 \amp5\\
+            5 \amp 5 \amp-2
+          \end{pmatrix}
+          =
+          \begin{pmatrix}
+            2\cdot 10 + 1 \cdot 5 \amp 2\cdot 5 + 1 \cdot 5 \amp 2\cdot 5 + 1 \cdot (-2)\\
+            1\cdot 10 + 1 \cdot 5 \amp 1\cdot 5 + 1 \cdot 5 \amp 1\cdot 5 + 1 \cdot (-2)\\
+            3\cdot 10 + 2 \cdot 5 \amp 3\cdot 5 + 2 \cdot 5 \amp 3\cdot 5 + 2 \cdot (-2)
+          \end{pmatrix} 
+          = 
+          \begin{pmatrix}
+            25 \amp 15\amp 8)\\
+            15 \amp 10 \amp 3\\
+            40 \amp 25 \amp 11
+          \end{pmatrix}
+        </m>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="exa_oper4">
+    <statement>
+      <p>
+        Dadas las matrices
+        <me>
+          A=\begin{pmatrix}
+          2\amp2\amp-1 \\
+          -1\amp-1\amp1 \\
+          -1\amp-2\amp2
+          \end{pmatrix}
+          \qquad
+          I=\begin{pmatrix}
+          1\amp0\amp0 \\
+          0\amp1\amp0 \\
+          0\amp0\amp1
+          \end{pmatrix}
+        </me>
+        calcular la matriz <m>(A-I)^2</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Primero calculamos
+        <m>
+          A-I=\begin{pmatrix}
+          2\amp2\amp-1 \\
+          -1\amp-1\amp1 \\
+          -1\amp-2\amp2
+          \end{pmatrix}
+          -
+          \begin{pmatrix}
+          1\amp0\amp0 \\
+          0\amp1\amp0 \\
+          0\amp0\amp1
+          \end{pmatrix}
+          =
+          \begin{pmatrix}
+          1 \amp 2 \amp -1 \\
+          -1\amp-2\amp1 \\
+          -1\amp-2 \amp 1
+          \end{pmatrix} 
+        </m>
+      </p>
+      <p>
+        Ahora calculamos 
+        <m>
+          (A-I)^2=\begin{pmatrix}
+          1 \amp 2 \amp -1 \\
+          -1\amp-2\amp1 \\
+          -1\amp-2 \amp 1
+          \end{pmatrix} 
+          \cdot
+          \begin{pmatrix}
+          1 \amp 2 \amp -1 \\
+          -1\amp-2\amp1 \\
+          -1\amp-2 \amp 1
+          \end{pmatrix} 
+          =
+          \begin{pmatrix}
+          0 \amp 0 \amp 0 \\
+          0\amp0\amp0 \\
+          0\amp0 \amp 0
+          \end{pmatrix} 
+        </m>
+      </p>
+    </solution>
+  </example>
+  
+  <example xml:id="exa_oper5">
+    <statement>
+      <p>
+        Sea <m>A=\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}</m>. Se pide:
+      </p>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              Demostrar que <m>A^2=2A-I</m>, donde <m>I</m> es la matriz identidad de orden 2.
+            </p>
+          </li>
+          <li>
+            <p> 
+              Expresar <m>A^3</m> y <m>A^4</m> en función de <m>A</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calcular <m>A^{100}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              Calculamos <m>A^2</m>
+            </p>
+            <p>
+              <m>A^2=\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix} \cdot\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}= \begin{pmatrix} 1 \amp 0 \\ -2 \amp 1 \end{pmatrix}</m>
+            </p>
+            <p>
+              Ahora calculamos <m>2A-I=2\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}- \begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}=\begin{pmatrix} 1 \amp 0 \\ -2 \amp 1 \end{pmatrix}</m>
+            </p>
+            <p>
+              Como vemos son iguales.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A^3=A^2\cdot A= (2A-I)\cdot A= 2A^2-I\cdot A=2A^2-A=2(2A-I)-A=3A-2I</m>
+            </p>
+            <p>
+              <m>A^4=A^3\cdot A=(3A-2I)\cdot A=3A^2-2I\cdot A= 3(2A-I)-2A=4A-3I</m> 
+            </p>
+          </li>
+          <li>
+            <p> 
+              <m>A^{100}=100A-99I=100\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}- 99\begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}=  \begin{pmatrix} 1 \amp 0 \\ -100 \amp 1 \end{pmatrix}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+  
+  <example xml:id="exa_oper6">
+    <statement>
+      <p>
+        Dada la matriz <m>A=\begin{pmatrix}  0 \amp 0 \amp 1 \\  0 \amp a \amp 0 \\ -1 \amp 0 \amp -2 \end{pmatrix} </m>, se pide:
+      </p>
+      <p>
+        Determínese el valor o los valores del parámetro <m>a</m> para que se verifique que <m>A^2+2A+I=O</m>, siendo <m>I</m> la matriz unidad y <m>O</m> la matriz nula, ambas de orden 3.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Calculamos <m>A^2</m>
+      </p>
+      <p>
+        <me>
+          A^2
+          =
+          \begin{pmatrix}
+            0 \amp 0 \amp 1 \\
+            0 \amp a \amp 0 \\
+            -1 \amp 0 \amp -2 
+          \end{pmatrix}\cdot
+          \begin{pmatrix}
+            0 \amp 0 \amp 1 \\
+            0 \amp a \amp 0 \\
+            -1 \amp 0 \amp -2 
+          \end{pmatrix}= 
+          \begin{pmatrix}
+            -1 \amp 0 \amp -2 \\
+            0 \amp a^2 \amp 0 \\
+            2 \amp 0 \amp 3 
+          \end{pmatrix}
+        </me>
+      </p>
+      <p>
+        Ahora calculamos <m>A^2+2A+I</m>
+      </p>
+      <p>
+        <me>
+          \begin{pmatrix}
+            -1 \amp 0 \amp -2 \\
+            0 \amp a^2 \amp 0 \\
+            2 \amp 0 \amp 3 
+          \end{pmatrix} 
+          +
+          2
+          \begin{pmatrix}
+            0 \amp 0 \amp 1 \\
+            0 \amp a \amp 0 \\
+            -1 \amp 0 \amp -2 
+          \end{pmatrix}+
+          \begin{pmatrix}
+            1 \amp 0 \amp 0 \\
+            0 \amp 1 \amp 0 \\
+            0 \amp 0 \amp 1
+          \end{pmatrix}=
+          \begin{pmatrix}
+            0 \amp 0 \amp 0 \\
+            0 \amp a^2+2a+1 \amp 0 \\
+            0 \amp 0 \amp 0 
+          \end{pmatrix}
+        </me>
+      </p>
+      <p>
+        Igualando a la matriz nula:
+      </p>
+      <p>
+        <me>
+          \begin{pmatrix}
+            0 \amp 0 \amp 0 \\
+            0 \amp a^2+2a+1 \amp 0 \\
+            0 \amp 0 \amp 0 
+          \end{pmatrix}=
+          \begin{pmatrix}
+            0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0 \\
+            0 \amp 0 \amp 0
+          \end{pmatrix}
+        </me>
+      </p>
+      <p>
+        Luego: <m>a^2+2a+1=0 \Rightarrow a=-1</m>
+      </p>
+    </solution>
+  </example>
+  
+  <example xml:id="exa_oper7">
+    <statement>
+      <p>
+        Sean las matrices 
+        <m>A=\begin{pmatrix} 2 \amp 1 \\ 1 \amp 1 \end{pmatrix}</m>, 
+        <m>B=\begin{pmatrix} 1 \amp x \\ x \amp 0  \end{pmatrix}</m> y  
+        <m>C=\begin{pmatrix} 0 \amp -1 \\ -1 \amp 2 \end{pmatrix}</m>
+      </p>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              Encuentre el valor o los valores de <m>x</m> de forma que <m>B^2=A</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine <m>x</m> para que <m>A+B+C=3I_2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              Hallamos <m>B^2</m>.
+            </p>
+            <p>
+              <me>
+                \begin{pmatrix}
+                    1 \amp x \\
+                    x \amp 0 
+                \end{pmatrix} \cdot 
+                \begin{pmatrix}
+                    1 \amp x \\
+                    x \amp 0 
+                \end{pmatrix}=
+                \begin{pmatrix}
+                    x^2+1 \amp x \\
+                    x \amp x^2
+                \end{pmatrix}
+              </me>
+            </p>
+            <p>
+              Igualamos las dos matrices : 
+            </p>
+            <p>
+              <me>
+                \begin{pmatrix}
+                    x^2+1 \amp x \\
+                    x \amp x^2
+                \end{pmatrix} =
+                \begin{pmatrix}
+                    2 \amp 1 \\
+                    1 \amp 1
+                \end{pmatrix}
+              </me>
+            </p>
+            <p>
+              De aquí obtenemos el siguiente sistema de ecuaciones:
+            </p>
+            <p>
+              <me>
+                \left\lbrace
+                \begin{array}{l}
+                x^2+1=2 \\
+                x=1 \\
+                x=1 \\
+                x^2=1
+                \end{array}
+                \right. \Rightarrow x=1 
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              Hallamos <m>A+B+C</m>
+            </p>
+            <p>
+              <me>
+                \begin{pmatrix}
+                    2 \amp 1 \\
+                    1 \amp 1
+                \end{pmatrix} +  
+                \begin{pmatrix}
+                    1 \amp x \\ 
+                    x \amp 0
+                \end{pmatrix}
+                +\begin{pmatrix}
+                    0 \amp -1 \\
+                    -1 \amp 2
+                \end{pmatrix}=
+                \begin{pmatrix}
+                    3 \amp x \\
+                    x \amp 3
+                \end{pmatrix}
+              </me>
+            </p>
+            <p>
+              Igualando esta matriz a <m>3I_2</m> obtenemos:
+            </p>
+            <p>
+              <me>
+                \begin{pmatrix}
+                    3 \amp x \\
+                    x \amp 3
+                \end{pmatrix}=
+                \begin{pmatrix}
+                    3 \amp 0 \\
+                    0 \amp 3
+                \end{pmatrix}
+                \Rightarrow \left\lbrace
+                \begin{array}{l}
+                3=3 \\
+                x=0 \\
+                x=0 \\
+                3=3
+                \end{array}
+                \right. \Rightarrow x=0
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>

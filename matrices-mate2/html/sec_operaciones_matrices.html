@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-03-06T00:16:37+01:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="es-ES">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Matemáticas Operaciones con matrices</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evalua (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="pretext-SC" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Salta al contenido principal</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\order}[1]{\left\lvert#1\right\rvert}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://ived.eus" target="_blank"><img src="images/logoIVED.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="matrices.html"><span class="title">Matrices y Determinantes</span></a></h1>
+<p class="byline">Ricardo Mateos<br xmlns:svg="http://www.w3.org/2000/svg"> Cristina Gual<br xmlns:svg="http://www.w3.org/2000/svg"> Josu Beobide</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Índice</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Índice alfabético">Índice alfabético</a><button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "classic",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_tipos_matrices.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="matrices.html" title="Arriba">Arriba</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Siguiente">Siguiente</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Índice</button><a class="previous-button toolbar-item button" href="sec_tipos_matrices.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="matrices.html" title="Arriba">Arriba</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Siguiente">Siguiente</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Páginas preliminares</span></a></li>
+<li class="link"><a href="sec_definicion_matriz.html" data-scroll="sec_definicion_matriz"><span class="codenumber">1</span> <span class="title">Definiciones.</span></a></li>
+<li class="link"><a href="sec_tipos_matrices.html" data-scroll="sec_tipos_matrices"><span class="codenumber">2</span> <span class="title">Tipos de matrices.</span></a></li>
+<li class="link active"><a href="sec_operaciones_matrices.html" data-scroll="sec_operaciones_matrices"><span class="codenumber">3</span> <span class="title">Operaciones con matrices</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Apéndices</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Realizado con PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_operaciones_matrices"><h2 class="heading hide-type">
+<span class="type">Sección</span> <span class="codenumber">3</span> <span class="title">Operaciones con matrices</span>
+</h2>
+<article class="definition definition-like" id="definition-1"><h6 class="heading">
+<span class="type">Definición</span><span class="space"> </span><span class="codenumber">3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Suma.</span>
+</h6>
+<p id="p-42">Dadas dos matrices de la misma dimensión \(A=(a_{ij})\) y \(B=(b_{ij})\) llamamos suma a otra matriz \(C=(c_{ij})\) definida por</p>
+<div class="displaymath" id="p-43">
+\begin{equation*}
+(c_{ij})=(a_{ij})+(b_{ij})=(a_{ij}+b_{ij})
+\end{equation*}
+</div>
+<p id="p-44">Y cumple las siguientes propiedades</p>
+<ol id="p-45" class="decimal">
+<li id="li-8"><p id="p-46">\(\displaystyle A+B=B+A\)</p></li>
+<li id="li-9"><p id="p-47">\(\displaystyle A+(B+C)=(A+B)+C\)</p></li>
+<li id="li-10"><p id="p-48">\(\displaystyle A+0=A\)</p></li>
+<li id="li-11"><p id="p-49">\(\displaystyle A-A=0\)</p></li>
+</ol></article><article class="example example-like" id="exa_oper1"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper1"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper1"><article class="example example-like"><p id="p-50">Sumar \(\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1 \\
+3 \amp 2
+\end{pmatrix} 
++
+\begin{pmatrix}
+1 \amp 0 \\
+-1 \amp -2 \\
+2 \amp 3
+\end{pmatrix}    \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><div class="displaymath" id="p-51">
+\begin{equation*}
+\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1 \\
+3 \amp 2
+\end{pmatrix} 
++
+\begin{pmatrix}
+1 \amp 0 \\
+-1 \amp -2 \\
+2 \amp 3
+\end{pmatrix}    = 
+\begin{pmatrix}
+3 \amp 1 \\
+0 \amp-1 \\
+5 \amp 5
+\end{pmatrix}    
+\end{equation*}
+</div></div></div>
+</div></article></div>
+<article class="assemblage assemblage-like" id="assemblage-3"><h6 class="heading"><span class="title">Producto por un número real.</span></h6>
+<p id="p-52">Dados un número real \(k\in \mathbb{R}\) y una matriz \(A=(a_{ij})\) se define el producto de \(k\cdot A\) de la siguiente manera:</p>
+<div class="displaymath" id="p-53">
+\begin{equation*}
+k\cdot A=k\cdot (a_{ij})= (k\cdot a_{ij})
+\end{equation*}
+</div></article><article class="example example-like" id="exa_oper2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper2"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper2"><article class="example example-like"><p id="p-54">Realizar la siguiente operación:</p>
+<div class="displaymath" id="p-55">
+\begin{equation*}
+5\cdot\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1 \\
+3 \amp 2
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="displaymath" id="p-56">
+\begin{equation*}
+\begin{pmatrix}
+10 \amp 5 \\
+5 \amp 5 \\
+15 \amp 10
+\end{pmatrix}  
+\end{equation*}
+</div></div></div>
+</div></article></div>
+<article class="assemblage assemblage-like" id="assemblage-4"><h6 class="heading"><span class="title">Producto de matrices.</span></h6>
+<p id="p-57">Dos matrices \(A\) y \(B\) se pueden multiplicar si el número de columnas de \(A\) es igual al número de filas de \(B\text{,}\) en tal caso, se define la multiplicación de la siguiente manera</p>
+<div class="displaymath" id="p-58">
+\begin{equation*}
+\underbrace{A}_{m \ast n} \cdot \underbrace{B}_{n\ast p}=\underbrace{C}_{m\ast p}
+\end{equation*}
+</div>
+<p id="p-59">Para calcular el elemento \(c_{ij}\) hay que utilizar la fila \(i\) de \(A\) y la columna \(j\) de B.</p>
+<div class="displaymath" id="p-60">
+\begin{equation*}
+\begin{pmatrix}
+a_{i1} \amp a_{i2}\amp a_{i3}\amp \cdots \amp a_{in} \\
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+a_{j1} \\ a_{j2}\\a_{j3}\\ \cdots \\a_{jn} \\
+\end{pmatrix}=a_{i1}\cdot a_{j1}+ a_{i2} \cdot a_{2j} + \cdots +a_{in}\cdot a_{nj}
+\end{equation*}
+</div>
+<p id="p-61"><em class="emphasis">El producto de matrices no es conmutativo \(A \cdot B \neq B\cdot A\)</em></p></article><article class="example example-like" id="exa_oper3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper3"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper3"><article class="example example-like"><p id="p-62">Realizar el siguiente producto \(\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1 \\
+3 \amp 2
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+10 \amp 5 \amp5\\
+5 \amp 5 \amp-2
+\end{pmatrix}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><p id="p-63">\(\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1 \\
+3 \amp 2
+\end{pmatrix}
+\cdot 
+\begin{pmatrix}
+10 \amp 5 \amp5\\
+5 \amp 5 \amp-2
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\cdot 10 + 1 \cdot 5 \amp 2\cdot 5 + 1 \cdot 5 \amp 2\cdot 5 + 1 \cdot (-2)\\
+1\cdot 10 + 1 \cdot 5 \amp 1\cdot 5 + 1 \cdot 5 \amp 1\cdot 5 + 1 \cdot (-2)\\
+3\cdot 10 + 2 \cdot 5 \amp 3\cdot 5 + 2 \cdot 5 \amp 3\cdot 5 + 2 \cdot (-2)
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+25 \amp 15\amp 8)\\
+15 \amp 10 \amp 3\\
+40 \amp 25 \amp 11
+\end{pmatrix}\)</p></div></div>
+</div></article></div>
+<article class="example example-like" id="exa_oper4"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper4"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper4"><article class="example example-like"><p id="p-64">Dadas las matrices</p>
+<div class="displaymath">
+\begin{equation*}
+A=\begin{pmatrix}
+2\amp2\amp-1 \\
+-1\amp-1\amp1 \\
+-1\amp-2\amp2
+\end{pmatrix}
+\qquad
+I=\begin{pmatrix}
+1\amp0\amp0 \\
+0\amp1\amp0 \\
+0\amp0\amp1
+\end{pmatrix}
+\end{equation*}
+</div>
+<p class="continuation">calcular la matriz \((A-I)^2\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
+<p id="p-65">Primero calculamos \(A-I=\begin{pmatrix}
+2\amp2\amp-1 \\
+-1\amp-1\amp1 \\
+-1\amp-2\amp2
+\end{pmatrix}
+-
+\begin{pmatrix}
+1\amp0\amp0 \\
+0\amp1\amp0 \\
+0\amp0\amp1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 \amp 2 \amp -1 \\
+-1\amp-2\amp1 \\
+-1\amp-2 \amp 1
+\end{pmatrix} \)</p>
+<p id="p-66">Ahora calculamos \((A-I)^2=\begin{pmatrix}
+1 \amp 2 \amp -1 \\
+-1\amp-2\amp1 \\
+-1\amp-2 \amp 1
+\end{pmatrix} 
+\cdot
+\begin{pmatrix}
+1 \amp 2 \amp -1 \\
+-1\amp-2\amp1 \\
+-1\amp-2 \amp 1
+\end{pmatrix} 
+=
+\begin{pmatrix}
+0 \amp 0 \amp 0 \\
+0\amp0\amp0 \\
+0\amp0 \amp 0
+\end{pmatrix} \)</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="exa_oper5"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper5"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper5"><article class="example example-like"><p id="p-67">Sea \(A=\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}\text{.}\) Se pide:</p>
+<ol id="p-68" class="lower-alpha">
+<li id="li-12"><p id="p-69">Demostrar que \(A^2=2A-I\text{,}\) donde \(I\) es la matriz identidad de orden 2.</p></li>
+<li id="li-13"><p id="p-70">Expresar \(A^3\) y \(A^4\) en función de \(A\text{.}\)</p></li>
+<li id="li-14"><p id="p-71">Calcular \(A^{100}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><ol id="p-72" class="lower-alpha">
+<li id="li-15">
+<p id="p-73">Calculamos \(A^2\)</p>
+<p id="p-74">\(A^2=\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix} \cdot\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}= \begin{pmatrix} 1 \amp 0 \\ -2 \amp 1 \end{pmatrix}\)</p>
+<p id="p-75">Ahora calculamos \(2A-I=2\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}- \begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}=\begin{pmatrix} 1 \amp 0 \\ -2 \amp 1 \end{pmatrix}\)</p>
+<p id="p-76">Como vemos son iguales.</p>
+</li>
+<li id="li-16">
+<p id="p-77">\(A^3=A^2\cdot A= (2A-I)\cdot A= 2A^2-I\cdot A=2A^2-A=2(2A-I)-A=3A-2I\)</p>
+<p id="p-78">\(A^4=A^3\cdot A=(3A-2I)\cdot A=3A^2-2I\cdot A= 3(2A-I)-2A=4A-3I\)</p>
+</li>
+<li id="li-17"><p id="p-79">\(\displaystyle A^{100}=100A-99I=100\begin{pmatrix} 1 \amp 0 \\ -1 \amp 1 \end{pmatrix}- 99\begin{pmatrix} 1 \amp 0 \\ 0 \amp 1 \end{pmatrix}=  \begin{pmatrix} 1 \amp 0 \\ -100 \amp 1 \end{pmatrix}\)</p></li>
+</ol></div></div>
+</div></article></div>
+<article class="example example-like" id="exa_oper6"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper6"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper6"><article class="example example-like"><p id="p-80">Dada la matriz \(A=\begin{pmatrix}  0 \amp 0 \amp 1 \\  0 \amp a \amp 0 \\ -1 \amp 0 \amp -2 \end{pmatrix} \text{,}\) se pide:</p>
+<p id="p-81">Determínese el valor o los valores del parámetro \(a\) para que se verifique que \(A^2+2A+I=O\text{,}\) siendo \(I\) la matriz unidad y \(O\) la matriz nula, ambas de orden 3.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like">
+<p id="p-82">Calculamos \(A^2\)</p>
+<div class="displaymath" id="p-83">
+\begin{equation*}
+A^2
+=
+\begin{pmatrix}
+0 \amp 0 \amp 1 \\
+0 \amp a \amp 0 \\
+-1 \amp 0 \amp -2 
+\end{pmatrix}\cdot
+\begin{pmatrix}
+0 \amp 0 \amp 1 \\
+0 \amp a \amp 0 \\
+-1 \amp 0 \amp -2 
+\end{pmatrix}= 
+\begin{pmatrix}
+-1 \amp 0 \amp -2 \\
+0 \amp a^2 \amp 0 \\
+2 \amp 0 \amp 3 
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-84">Ahora calculamos \(A^2+2A+I\)</p>
+<div class="displaymath" id="p-85">
+\begin{equation*}
+\begin{pmatrix}
+-1 \amp 0 \amp -2 \\
+0 \amp a^2 \amp 0 \\
+2 \amp 0 \amp 3 
+\end{pmatrix} 
++
+2
+\begin{pmatrix}
+0 \amp 0 \amp 1 \\
+0 \amp a \amp 0 \\
+-1 \amp 0 \amp -2 
+\end{pmatrix}+
+\begin{pmatrix}
+1 \amp 0 \amp 0 \\
+0 \amp 1 \amp 0 \\
+0 \amp 0 \amp 1
+\end{pmatrix}=
+\begin{pmatrix}
+0 \amp 0 \amp 0 \\
+0 \amp a^2+2a+1 \amp 0 \\
+0 \amp 0 \amp 0 
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-86">Igualando a la matriz nula:</p>
+<div class="displaymath" id="p-87">
+\begin{equation*}
+\begin{pmatrix}
+0 \amp 0 \amp 0 \\
+0 \amp a^2+2a+1 \amp 0 \\
+0 \amp 0 \amp 0 
+\end{pmatrix}=
+\begin{pmatrix}
+0 \amp 0 \amp 0 \\
+0 \amp 0 \amp 0 \\
+0 \amp 0 \amp 0
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-88">Luego: \(a^2+2a+1=0 \Rightarrow a=-1\)</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="exa_oper7"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-exa_oper7"><h6 class="heading">
+<span class="type">Ejemplo</span><span class="space"> </span><span class="codenumber">3.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exa_oper7"><article class="example example-like"><p id="p-89">Sean las matrices \(A=\begin{pmatrix} 2 \amp 1 \\ 1 \amp 1 \end{pmatrix}\text{,}\) \(B=\begin{pmatrix} 1 \amp x \\ x \amp 0  \end{pmatrix}\) y \(C=\begin{pmatrix} 0 \amp -1 \\ -1 \amp 2 \end{pmatrix}\)</p>
+<ol id="p-90" class="lower-alpha">
+<li id="li-18"><p id="p-91">Encuentre el valor o los valores de \(x\) de forma que \(B^2=A\)</p></li>
+<li id="li-19"><p id="p-92">Determine \(x\) para que \(A+B+C=3I_2\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solución</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like"><ol id="p-93" class="lower-alpha">
+<li id="li-20">
+<p id="p-94">Hallamos \(B^2\text{.}\)</p>
+<div class="displaymath" id="p-95">
+\begin{equation*}
+\begin{pmatrix}
+1 \amp x \\
+x \amp 0 
+\end{pmatrix} \cdot 
+\begin{pmatrix}
+1 \amp x \\
+x \amp 0 
+\end{pmatrix}=
+\begin{pmatrix}
+x^2+1 \amp x \\
+x \amp x^2
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-96">Igualamos las dos matrices :</p>
+<div class="displaymath" id="p-97">
+\begin{equation*}
+\begin{pmatrix}
+x^2+1 \amp x \\
+x \amp x^2
+\end{pmatrix} =
+\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-98">De aquí obtenemos el siguiente sistema de ecuaciones:</p>
+<div class="displaymath" id="p-99">
+\begin{equation*}
+\left\lbrace
+\begin{array}{l}
+x^2+1=2 \\
+x=1 \\
+x=1 \\
+x^2=1
+\end{array}
+\right. \Rightarrow x=1 
+\end{equation*}
+</div>
+</li>
+<li id="li-21">
+<p id="p-100">Hallamos \(A+B+C\)</p>
+<div class="displaymath" id="p-101">
+\begin{equation*}
+\begin{pmatrix}
+2 \amp 1 \\
+1 \amp 1
+\end{pmatrix} +  
+\begin{pmatrix}
+1 \amp x \\ 
+x \amp 0
+\end{pmatrix}
++\begin{pmatrix}
+0 \amp -1 \\
+-1 \amp 2
+\end{pmatrix}=
+\begin{pmatrix}
+3 \amp x \\
+x \amp 3
+\end{pmatrix}
+\end{equation*}
+</div>
+<p id="p-102">Igualando esta matriz a \(3I_2\) obtenemos:</p>
+<div class="displaymath" id="p-103">
+\begin{equation*}
+\begin{pmatrix}
+3 \amp x \\
+x \amp 3
+\end{pmatrix}=
+\begin{pmatrix}
+3 \amp 0 \\
+0 \amp 3
+\end{pmatrix}
+\Rightarrow \left\lbrace
+\begin{array}{l}
+3=3 \\
+x=0 \\
+x=0 \\
+3=3
+\end{array}
+\right. \Rightarrow x=0
+\end{equation*}
+</div>
+</li>
+</ol></div></div>
+</div></article></div></section></div></main>
+</div>
+</body>
+</html>

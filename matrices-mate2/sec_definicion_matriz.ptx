@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<section xml:id="sec_definicion_matriz" >
+
+  <title>Definiciones.</title>
+
+  <assemblage>
+    <p>
+      Una <em> matriz de dimensión <m>m \times n</m> </em> es un conjunto de números ordenados en m filas y n columnas de la forma:
+    </p>
+    <p>
+      <me>
+	A=\begin{pmatrix} 
+	a_{11} \amp a_{12} \amp \cdots \amp a_{1n} \\
+	a_{21} \amp a_{22} \amp \cdots \amp a_{2n} \\
+	\vdots  \amp \vdots  \amp \cdots \amp \vdots \\
+	a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn} \\
+	\end{pmatrix}
+      </me>
+    </p>
+  </assemblage>
+
+  <p>
+  Cada elemento genérico de la matriz se designa por <m>a_{ij}</m>, donde <m>i</m> es el número de fila que ocupa y <m>j</m> es el número de fila.
+  </p>
+
+  <assemblage>
+    <title>Igualdad de matrices</title>
+    <p>
+      Dos matrices de la misma dimensión <m>A_{mxn}=(a_{ij})</m> y <m>B_{mxn}=(b_{ij})</m> son iguales si <m>a_{ij}=b_{ij}\quad \forall i,j</m>
+    </p>
+  </assemblage>
+
+  <example xml:id="ej_matriz1">
+    <statement>
+      <p>
+	Dada la matriz
+	<m>A= \begin{pmatrix}  -1 \amp 1  \\  2 \amp -3 \\  3 \amp -5 \\ \end{pmatrix}</m> , escribir su dimensión y los elementos <m>a_{12}</m>, <m>a_{22}</m> y <m>a_{31}</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+	La matriz tiene 3 filas y  2 columnas, luego su dimensión es <m>3x2</m>.
+      </p>
+      <p>
+	<m>a_{12} = 1</m>, <m>a_{22}= -3</m> y <m>a_{31}=3</m>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="ej_matriz2">
+    <statement>
+      <p>
+	Hallar los valores de <m>x</m> e <m>y</m> para que las matrices <m> \begin{pmatrix}  x \amp 1 \\  2 \amp y \\ \end{pmatrix}</m>, <m> \begin{pmatrix}  3 \amp x-2 \\  y \amp x-1 \\ \end{pmatrix}</m> sean iguales.
+      </p>
+    </statement>
+    <solution>
+      <p>
+	Para que sean iguales cada elemento de la primera matriz tiene que ser igual a su correspondiente de la segunda.
+      </p>
+      <p>
+	Por lo tanto, <m>\begin{cases} x= 3 \cr 1= x-2 \cr 2= y \cr y=x-1 \end{cases}</m>
+      </p>
+      <p>
+	Resolviendo tenemos que <m>x=3 </m> e <m> y=1</m>.
+      </p>
+    </solution>
+  </example>
+</section>

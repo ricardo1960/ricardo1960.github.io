@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file is part of the PreTeXt Showcase article. -->
+<!--                                                    -->
+<!-- Copyright (©) 2019 The PreTeXt Organization.       -->
+<!-- See the README file for contributing guidelines.   -->
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="es-ES" >
+
+  <docinfo>
+    <brandlogo url="https://ived.eus" source="images/logoIVED.jpg" />
+
+    <macros>
+      \newcommand{\order}[1]{\left\lvert#1\right\rvert}
+      \newcommand{\R}{\mathbb{R}}
+    </macros>
+
+    <latex-image-preamble>
+      \usepackage{tikz}
+      \usepackage{pgfplots}
+      \usepackage{pstricks}
+      \usepackage{phaistos}
+      \usepackage{xcolor}
+    </latex-image-preamble>
+
+    <initialism>Matemáticas</initialism>
+
+    <document-id>pretext-SC</document-id>
+
+    <html>
+      <favicon/>
+      <baseurl href="https://pretextbook.org/examples/pretext-showcase/html" />
+    </html>
+
+
+  </docinfo>
+
+  <article xml:id="matrices">
+    <title>Matrices y Determinantes</title>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>
+              <line>Ricardo Mateos</line>
+              <line>Cristina Gual</line>
+              <line>Josu Beobide</line>
+          </personname>
+          <department>Departamento de Matemáticas</department>
+          <institution>
+            <line>Urrutiko Hezkuntzarako Euskal Institutua</line>
+            <line>Instituto Vasco de Eduación a Distancia</line>
+          </institution>
+          <email>
+             matematika.bizkaia@uhei.eus
+          </email>
+        </author>
+
+        <date>Curso 2020-2021</date>
+      </titlepage>
+
+      <abstract>
+        <p>
+          Teoria y ejercicios de matrices de Matemáticas II.
+        </p>
+      </abstract>
+    </frontmatter>
+
+    <xi:include href="sec_definicion_matriz.ptx" />
+    <xi:include href="sec_tipos_matrices.ptx" />
+    <xi:include href="sec_operaciones_matrices.ptx" />
+    <!--<xi:include href="sec_calculo_probabilidades.ptx" />-->
+    <!--<xi:include href="sec_tablas_de_contingencia.ptx" />-->
+    <!--<xi:include href="sec_experimentos_compuestos.ptx" />-->
+    <!--<xi:include href="sec_probabilidad_total.ptx" />-->
+    <!--<xi:include href="sec_teorema_de_bayes.ptx" />-->
+    <!--<xi:include href="sec_problemas.ptx" />-->
+
+    <backmatter><title>Apéndices</title>
+      <index>
+        <title>Index</title>
+
+        <introduction>
+          <p>
+            Las entradas están ordenadas por palabras.
+          </p>
+        </introduction>
+
+        <index-list />
+      </index>
+
+    </backmatter>
+
+  </article>
+
+</pretext>
